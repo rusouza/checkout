@@ -12,5 +12,6 @@ Foram criados 2 repositórios:
 
 - Spring Boot
 - Lombok
-- Mysql - 8.0.31
+- Mysql
 - Swagger
+- Junit

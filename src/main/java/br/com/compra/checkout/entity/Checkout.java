@@ -2,7 +2,6 @@ package br.com.compra.checkout.entity;
 
 import br.com.compra.checkout.enums.StatusCheckout;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -14,7 +13,6 @@ import java.util.Objects;
 @Getter
 @Setter
 @NoArgsConstructor
-@AllArgsConstructor
 @Entity
 @Table(name = "checkouts")
 public class Checkout {
