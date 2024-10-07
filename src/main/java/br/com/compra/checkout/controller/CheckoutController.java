@@ -37,6 +37,12 @@ public class CheckoutController {
     }
 
     @Operation(summary = "Criar um novo checkout")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "201", description = "Checkout criado com sucesso", content = {
+                    @Content(mediaType = "application/json", schema =
+                    @Schema(implementation = Checkout.class))
+            })
+    })
     @PostMapping
     public ResponseEntity<Checkout> criarCheckout(@RequestBody Checkout checkout) {
         checkout.setStatus(StatusCheckout.PENDENTE);
